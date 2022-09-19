@@ -1,13 +1,16 @@
 import Home from "./pages/Home";
 import { Global, css, ThemeProvider } from "@emotion/react";
 import theme from "./theme";
+import { ContainerLayout } from "./components/Layout/styles";
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
         <Global styles={stylesCss} />
-        <Home />
+        <ContainerLayout>
+          <Home />
+        </ContainerLayout>
       </ThemeProvider>
     </div>
   );
