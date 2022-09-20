@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <Container>
       <Header />
-      <section>
-        <Projects />
-      </section>
+      <Projects />
     </Container>
   );
 }
