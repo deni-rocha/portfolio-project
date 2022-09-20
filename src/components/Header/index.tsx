@@ -10,15 +10,15 @@ let img = require("../../assets/Perfil.jpg");
 const Header = () => {
   return (
     <Container>
-      <BlockWelcome>
+      <BlockWelcome className="animationFadeIn">
         <TitleWelcome>Olá, tudo bem?</TitleWelcome>
         <span className="bw--span">
           Que tal ver um pouco do meu trabalho...{" "}
         </span>
       </BlockWelcome>
-      <BlockInfo>
+      <BlockInfo className="animationBounce">
         <ImgPerfil imgUrl={img} /> {/* it's a Div tag */}
-        <div className="b-info-background">
+        <div className="b-info-background ">
           <section className="b-info--section">
             <div className="info-curly">
               <span>Sobre mim</span>

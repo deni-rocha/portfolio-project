@@ -35,13 +35,19 @@ export const BlockInfo = styled.section`
   align-items: center;
   font-family: "JetBrains Mono", monospace;
   color: #fff;
+
+  @media (max-width: 565px) {
+  }
+
   .b-info--section {
     padding: 2rem;
     background: ${({ theme }) => theme.gradient};
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-
+    &:hover {
+      filter: brightness(1.2);
+    }
     color: ${({ theme }) => theme.textLight};
     .value {
       color: #fff;
