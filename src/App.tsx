@@ -17,8 +17,23 @@ function App() {
 }
 
 const stylesCss = css`
+  .animationBounce {
+    animation: bounce 1s linear;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: scale(0.4);
+      transform: scale(0.4);
+    }
+
+    to {
+      transform: scale(1);
+      transform: scale(1);
+    }
+  }
   .animationFadeIn {
-    animation: fadeIn 2s linear;
+    animation: fadeIn 1s linear;
   }
   @keyframes fadeIn {
     from {
