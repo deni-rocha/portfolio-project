@@ -28,7 +28,7 @@ const Header = () => {
               "nome": <span className="value">Denilson Rocha,</span>
             </div>
             <div>
-              "função": <span className="value">Full Stack </span>
+              "função": <span className="value">Full Stack</span>
             </div>
             <div className="curly curly-right">{"\u007D"}</div>
           </section>
