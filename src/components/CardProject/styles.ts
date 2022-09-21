@@ -71,7 +71,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
     background: ${({ theme }) => theme.gradient};
     opacity: 0.75;
     border-radius: 20px;
-    transition: opacity 2s;
+    transition: opacity 1s;
     &:hover {
       opacity: 0.2;
     }
