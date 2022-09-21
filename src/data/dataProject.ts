@@ -1,3 +1,6 @@
+var dealta = require("../assets/dealta.png");
+var dogbreed = require("../assets/dogbreed.png");
+var dealtaApi = require("../assets/deAlta-api.png");
 const dataProjects = [
   {
     id: 1,
@@ -5,7 +8,7 @@ const dataProjects = [
     type: "website",
     description: "veja as músicas mais ouvidas no mundo e no brasil",
     link: "https://dealta.vercel.app",
-    // thumbnail: dealta,
+    thumbnail: dealta,
   },
   {
     id: 2,
@@ -13,23 +16,16 @@ const dataProjects = [
     type: "website",
     description: "projeto com página de registrar e listagem",
     link: "https://dogbreed-rose.vercel.app/",
-    // thumbnail: dogbreed,
+    thumbnail: dogbreed,
   },
+
   {
     id: 3,
-    title: "Pokebook",
-    type: "website",
-    description: "projeto para listar os pokemons",
-    link: "https://pokebook-liart.vercel.app/",
-    // thumbnail: pokebook,
-  },
-  {
-    id: 4,
     title: "API REST",
     type: "backend",
     description: "api rest com Node.js e Express.js",
     link: "https://dealta-api.herokuapp.com/",
-    // thumbnail: dealtaApi,
+    thumbnail: dealtaApi,
   },
 ];
 

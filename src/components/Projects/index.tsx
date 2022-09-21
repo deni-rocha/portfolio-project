@@ -11,11 +11,11 @@ const Projects = () => {
       {projects.map((item) => {
         return (
           <CardProject
-            id={item.id}
+            type={item.type}
+            slug={item.id}
             link={item.link}
-            thumbnail=""
+            img={item.thumbnail}
             title={item.title}
-            description={item.description}
             key={item.id}
           />
         );

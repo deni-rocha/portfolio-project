@@ -16,6 +16,7 @@ export const Container = styled.header`
 
 export const BlockWelcome = styled.section`
   color: ${({ theme }) => theme.primary};
+
   &:hover {
     filter: brightness(1.2);
   }

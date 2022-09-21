@@ -1,16 +1,29 @@
-import { IProjects } from "../../@types";
-import { Container } from "./styles";
+import { AiOutlineRightCircle } from "react-icons/ai";
+import { ProjetoContainer } from "./styles";
 
-interface PropsCardProject extends IProjects {
-  key: number;
+interface ProjetoProps {
+  title: string;
+  type: string;
+  slug: number;
+  img: string;
+  link: string;
 }
-const CardProject = ({ title, description }: PropsCardProject) => {
-  return (
-    <Container>
-      <p>{title}</p>
-      <article> {description}</article>
-    </Container>
-  );
-};
 
-export default CardProject;
+export default function CardProject({ title, type, img, link }: ProjetoProps) {
+  return (
+    <ProjetoContainer imgUrl={img} data-aos="fade-up">
+      <section>
+        <div className="overlay" />
+        <div className="text">
+          <h1>{title}</h1>
+          <h2>- {type}</h2>
+        </div>
+      </section>
+      <button type="button">
+        <a target="_blank" href={link}>
+          visitar <AiOutlineRightCircle />
+        </a>
+      </button>
+    </ProjetoContainer>
+  );
+}
