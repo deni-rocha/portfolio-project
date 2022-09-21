@@ -11,7 +11,7 @@ interface ProjetoProps {
 
 export default function CardProject({ title, type, img, link }: ProjetoProps) {
   return (
-    <ProjetoContainer imgUrl={img} data-aos="fade-up">
+    <ProjetoContainer imgUrl={img} data-aos="animationFadeIn">
       <section>
         <div className="overlay" />
         <div className="text">
